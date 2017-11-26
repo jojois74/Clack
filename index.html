@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Clack</title>
+		<link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet">
+		<link rel = "stylesheet" href = "css/indexStyle.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript" src = "js/scaffold.js"></script>
+		<script type = "text/javascript" src = "js/main.js"></script>
+	</head>
+	<body>
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  appId      : '738111396395936',
+			  xfbml      : true,
+			  version    : 'v2.9'
+			});
+			FB.AppEvents.logPageView();
+		  };
+
+		  (function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<br>
+		<center><h3>Clack</h3><br />by Joseph Rubin</center>
+		<br />
+		<p>Type the Hebrew word, then press space to move to the next word.<br />
+		There is no need to switch to Hebrew typing, the English keyboard mode will work.<br />
+		Choose a level of difficulty at the top, under the practice menu.</p>
+	</body>
+</html>

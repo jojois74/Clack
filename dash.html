@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app = "Dash">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Dash</title>
+		<link href = "https://fonts.googleapis.com/css?family=Alef" rel = "stylesheet"> 
+		<link href = "css/dashStyle.css" rel = "stylesheet"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+		<script type = "text/javascript" src = "js/dash.js"></script>
+	</head>
+	<body>
+		<div id = "wrap">
+			<div id = "wraphug">
+				<div id = "contain" ng-controller = "Letters">
+					<div id = "containhug">
+						<div class = "letter" ng-repeat = "letter in letters">
+							<span id = "{{$index}}" class = "symbol" ng-click = "select($index)">{{letter.glyph}}</span><!--<span ng-show = "letter.selected" style = "width: {{letter.progress * 6}}px; background-color: green; display: inline-block;"><span style = "visibility: hidden;">.</span></span>-->
+						</div>
+					</div>
+				</div>
+				<div class = "row1">
+					<div><img id = "medal"/></div>
+					<div class = "barwrap">
+						<div class = "barhug"><div class = "bar"><span style = "visibility:hidden">.</span></div></div>
+					</div>
+				</div>
+				<div id = "para">
+					<h4>Recommended Practice</h4>
+					<ul>
+						<li id = "a"><a href = 'javascript:g("game.html?time=6&hlight=true&help=false&len=.1")'>Roaring Rapids</a></li><!-- Fast paced short highlight --><li id = "b"><a href = 'javascript:g("game.html?time=0&hlight=true&help=true&len=.5")'>Serene Stroll</a></li><!-- Assisted, slow --><li id = "c"><a href = 'javascript:g("game.html?time=12&hlight=false&help=false&len=.95")'>Endurance Enigma</a></li><!-- Lots of time but no help --><li id = "d"><a href = 'javascript:g("game.html?time=9&hlight=false&help=true&len=.8")'>Precision Attack</a></li><!-- Help, but no highlight --><li id = "e"><a href = 'javascript:g("game.html?time=5&hlight=true&help=true&len=.92")'>Razor Thin</a></li><!-- Help, super hard --><li id = "f"><a href = 'javascript:g("game.html?time=0&hlight=true&help=false&len=.67")'>Cool Potato</a></li><!-- Easy but no help -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+﻿/*Reset*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+table {
+	display: none;
+}
+
+html {
+	background-color: #fdfdfd;
+}
+
+body {
+	font-family: 'Alef', sans-serif;
+}
+
+/*Root dimensions and positioning*/
+#root {
+	display: block;
+	margin: auto;
+	width: 70%;
+	border: 1px solid #eeeeee;
+	background-color: white;
+	margin-top: 18px;
+}
+
+#nav, #foot {
+	text-align: center;
+}
+
+#main_nav_tree {
+	margin-top: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	outline: 0;
+}
+
+#cont {
+	position: absolute;
+	left: -4px;
+	display: none;
+	top: 40px;
+	z-index: 10;
+	white-space: nowrap;
+}
+
+#cont li {
+	text-align: left;
+	box-shadow: none;
+	background: none;
+	background-color: #00b7ea;
+	width: 100%;
+	border: 1px solid #00a7ea;
+	box-shadow: 0px 0px 1px 1px #BBBBBB;
+}
+
+#cont li:hover{
+	text-align: left;
+	box-shadow: none;
+	background: none;
+	background-color: #009ec3;
+}
+
+#Practice:hover #cont, #cont:hover
+{
+	display: block;
+}
+
+#Practice {
+	box-shadow: none;
+	background: none;
+	background-color: #00b7ea;
+	cursor: default;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#Practice:active {
+	top: initial;
+	box-shadow: none;
+}
+
+#Practice::after {
+	content: " ↓";
+}
+
+.photo_container {
+	text-align: center;
+}
+
+.photo {
+	box-shadow: 0px 0px 2px 2px #BBBBBB;
+}
+
+li {
+	position: relative;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 4px;
+	cursor: pointer;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%);
+}
+
+li:hover {
+	background: linear-gradient(to bottom, #00c0fa 0%,#00a7d3 100%);
+}
+
+p {
+	margin: 11px;
+}
